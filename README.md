@@ -54,10 +54,22 @@ eg:
 
 ![对应api的参数图](https://github.com/lateautumn4lin/arida/blob/master/source/post_body_hints.png)
 
+## 如何开发自己的接口呢？
+
+1. `Config`文件中写入自己的`App信息`
+
+2. `Apps`目录写开发相应的`Frida-Js`脚本，可参考其他两个文件
+
 ## Run tests
 
 ```sh
 uvicorn main:app --reload
+
+测试Apk地址：
+
+1. https://www.wandoujia.com/apps/6612700
+
+2. https://www.wandoujia.com/apps/7666802
 ```
 eg:
 

@@ -18,7 +18,7 @@ INJECTION_APPS = [
         "package_name": "com.drcuiyutao.babyhealth"
     },
     {
-        "name": "快读作业",
+        "name": "快对作业",
         "path": "kuaiduizuoye",
         "package_name": "com.kuaiduizuoye.scan"
     }
