@@ -11,3 +11,15 @@
 '''
 from pathlib import Path
 PRASE_PATH = Path(__file__).absolute().parent / "parse.js"
+INJECTION_APPS = [
+    {
+        "name": "育学园",
+        "path": "yuxueyuan",
+        "package_name": "com.drcuiyutao.babyhealth"
+    },
+    {
+        "name": "快读作业",
+        "path": "kuaiduizuoye",
+        "package_name": "com.kuaiduizuoye.scan"
+    }
+]

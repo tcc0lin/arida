@@ -23,6 +23,14 @@ Do By You Self！
 
 `Python`执行`PyexecJs`通过`Js的AST树`结构获取`Frida-Js`脚本中`rpc.exports`的方法以及对应方法的参数个数，根据方法名和参数个数通过`types.FunctionDef`从`Python AST字节码`来动态生成新的`Function对象`，并且结合`pydantic`的`create_model`自动生成的参数模型注册到`FastAPI的路由系统`中，实现`Frida-RPC`的功能。
 
+## 核心功能
+
+1. 对接多个`App`的`RPC接口暴露`
+
+2. 自动转化`Js export`方法变成接口
+
+3. 自动生成接口文档
+
 ## Install
 
 ```sh
