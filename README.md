@@ -40,12 +40,20 @@ Do By You Self！
 
 2. watch 127.0.0.1:8000/docs 
 ```
+eg:
+
+![生成的fastapi的api结构图](https://github.com/lateautumn4lin/arida/blob/master/source/fastapi_docs.png)
+
+![对应api的参数图](https://github.com/lateautumn4lin/arida/blob/master/source/post_body_hints.png)
 
 ## Run tests
 
 ```sh
 uvicorn main:app --reload
 ```
+eg:
+
+![测试图](https://github.com/lateautumn4lin/arida/blob/master/source/test.png)
 
 ## 参考资料
 
