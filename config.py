@@ -9,10 +9,5 @@
 @License :   (C)Copyright 2020
 @Desc    :   None
 '''
-
-apps_config = [
-    {
-        "package_name": "com.kuaiduizuoye.scan",
-        "script_name": "kuaiduizuoye.js"
-    }
-]
+from pathlib import Path
+PRASE_PATH = Path(__file__).absolute().parent / "parse.js"

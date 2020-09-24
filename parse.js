@@ -19,7 +19,11 @@ function parse(code) {
     // 处理function，获取函数名以及对应参数
     FunctionDeclaration(path) {
       let params = path.node;
-      functions.set(params.id.name, params.params.length)
+      var lst = new Array();
+      for (let i = 0; i < params.params.length; i++) {
+        lst.push(params.params[i].name)
+      }
+      functions.set(params.id.name, lst)
     }
   }
   babel.transform(code, {

@@ -11,28 +11,40 @@
   </a>
 </p>
 
-> 基于FastAPI实现的Frida-Rpc工具
+> 基于`FastAPI`实现的`Frida-RPC`工具，只需开发好相对应app的`Frida-Js`脚本，即可自动生成相应的基于`FastAPI`的`Frida-RPC`工具
 
 ### 🏠 [Homepage](暂无)
 
 ### ✨ [Demo](暂无)
 
+Do By You Self！
+
+## 实现原理
+
+`Python`执行`PyexecJs`通过`Js的AST树`结构获取`Frida-Js`脚本中`rpc.exports`的方法以及对应方法的参数个数，根据方法名和参数个数通过`types.FunctionDef`从`Python AST字节码`来动态生成新的`Function对象`，并且结合`pydantic`的`create_model`自动生成的参数模型注册到`FastAPI的路由系统`中，实现`Frida-RPC`的功能。
+
 ## Install
 
 ```sh
-暂无
+1. git clone git@github.com:lateautumn4lin/arida.git
+
+2. conda create -n arida python==3.8
+
+3. conda install --yes --file requirements.txt
 ```
 
 ## Usage
 
 ```sh
-暂无
+1. uvicorn main:app --reload
+
+2. watch 127.0.0.1:8000/docs 
 ```
 
 ## Run tests
 
 ```sh
-暂无
+uvicorn main:app --reload
 ```
 
 ## 参考资料
