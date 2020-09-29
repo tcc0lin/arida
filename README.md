@@ -25,11 +25,11 @@ Do By You Self！
 
 ## 核心功能
 
-1. 对接多个`App`的`RPC接口暴露`
+1. 管理`JavaScript`文件，具备`APP-文件`的映射关系
 
-2. 自动转化`Js export`方法变成接口
+2. 自动针对现有的`JavaScript`方法生成相应的`API`方法
 
-3. 自动生成接口文档
+3. 自动生成`Open API`文档
 
 ## Install
 
