@@ -15,6 +15,8 @@
 
 > 基于`FastAPI`实现的`Frida-RPC`工具，只需开发好相对应app的`Frida-Js`脚本，即可自动生成相应的基于`FastAPI`的`Frida-RPC`工具
 
+原理介绍：https://mp.weixin.qq.com/s/U6RNZTFyLp5GsGU8o17x3Q
+
 ### 🏠 [Homepage](暂无)
 
 ### ✨ [Demo](暂无)
